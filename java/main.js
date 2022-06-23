@@ -22,19 +22,19 @@ for (i = 0; i < close.length; i++) {
 
 //add checked symbol when clicking on list item
 
-var list=document.querySelector('ul')
-list.addEventListener('click',
-function(ev)
-{
-    if(ev.target.tagName==='LI')
-    {
-        ev.target.classList.toggle('checked');
-    }
-},false);
+// var list=document.querySelector('ul')
+// list.addEventListener('click',
+// function(ev)
+// {
+//     if(ev.target.tagName==='LI')
+//     {
+//         ev.target.classList.toggle('checked');
+//     }
+// },false);
 
 //create a new list item when clicking on the "add" button
 function newElement()
-{
+{   
     var li=document.createElement("li");
     var inputValue=document.getElementById("input").value;
     var t=document.createTextNode(inputValue);
@@ -46,7 +46,7 @@ function newElement()
     }
     else
     {
-        document.getElementById(example).appendChild(li);
+        document.getElementById('todo-list-item').appendChild(li);
     }
     document.getElementById("input").value="";
 

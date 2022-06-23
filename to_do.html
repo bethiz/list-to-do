@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>bet-to-do-list</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style/to_do.css"><!--extrnal css /-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- add icon library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
+
+    <body>
+        <header>
+            <h1> my to-do list</h1>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <script src="main.js"> </script>
+                    <form>
+                       <h1> <label for="title">title :</label>
+                        <input type="text" name="title" id="title"> </h1>
+                    
+                        <h1> <label for="title">folder name :</label>
+                            <input type="text" name="title" id="title"> </h1>
+                    </form>
+               
+                </div>
+                <div>
+                    <input type="text" id="input" placeholder="..to do..">
+                    <span onclick="newElement()" class="addbtn">add</span> 
+                </div>
+                <div>
+                    <p>list ada kat sini lepas add</p><!-- list ada kat sini lepas add-->
+                </div>
+                <div>
+                    <a href="landingpage.html"><button  class="button"><i class="fa fa-home"></i>home </button></a>
+                    <button  class="button"><i class="fa fa-save"></i>save </button> 
+                    <!-- lepas save masuk dekat mylist-->
+                    <button  class="button"><i class="fa fa-trash"></i>delete </button> 
+                    <!-- delete whole thing-->
+                    <button  class="button"><i class="fa fa-folder"></i>move to</button>  
+                    <!-- pilih folder-->             
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer></footer>
+</html>
